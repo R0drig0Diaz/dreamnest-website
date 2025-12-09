@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - DreamNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FBFBFB;
+            color: #1B1E28;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 16px;
+        }
+
+        .app-name {
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 36px;
+            font-weight: 800;
+            color: #1B1E28;
+            margin-bottom: 4px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: #707B81;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1B1E28;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: #707B81;
+        }
+
+        /* Hero Card */
+        .hero-card {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            border-radius: 20px;
+            padding: 32px 24px;
+            text-align: center;
+            color: white;
+            margin: 32px 0;
+        }
+
+        .hero-card .shield-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .hero-card h2 {
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .hero-card p {
+            font-size: 14px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section h2 {
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 20px;
+            font-weight: 700;
+            color: #1B1E28;
+            margin-bottom: 12px;
+        }
+
+        .section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1B1E28;
+            margin: 24px 0 8px 0;
+        }
+
+        .section p, .section li {
+            font-size: 14px;
+            color: #707B81;
+            line-height: 1.6;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section li {
+            padding: 4px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .section li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background-color: #4ECDC4;
+            border-radius: 50%;
+        }
+
+        /* Privacy Cards */
+        .privacy-card {
+            background-color: #F7F7F9;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 12px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .privacy-card .icon-box {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(78, 205, 196, 0.15);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .privacy-card .icon-box span {
+            font-size: 22px;
+        }
+
+        .privacy-card h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1B1E28;
+            margin-bottom: 6px;
+        }
+
+        .privacy-card .items {
+            list-style: none;
+            padding: 0;
+        }
+
+        .privacy-card .items li {
+            font-size: 13px;
+            color: #707B81;
+            padding: 2px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .privacy-card .items li::before {
+            content: "\2715";
+            position: absolute;
+            left: 0;
+            color: #E57373;
+            font-size: 12px;
+        }
+
+        .privacy-card.collect .items li::before {
+            content: "\2713";
+            color: #4ECDC4;
+        }
+
+        /* Compliance Cards */
+        .compliance-card {
+            border: 1px solid rgba(78, 205, 196, 0.3);
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 12px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .compliance-card .check-icon {
+            color: #4ECDC4;
+            font-size: 24px;
+        }
+
+        .compliance-card h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1B1E28;
+            margin-bottom: 4px;
+        }
+
+        .compliance-card p {
+            font-size: 13px;
+            color: #707B81;
+        }
+
+        /* Rights List */
+        .rights-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rights-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0;
+        }
+
+        .rights-list .check-circle {
+            width: 24px;
+            height: 24px;
+            background-color: rgba(78, 205, 196, 0.15);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4ECDC4;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .rights-list span {
+            font-size: 14px;
+            color: #1B1E28;
+        }
+
+        /* Legal Text */
+        .legal-section {
+            margin-bottom: 24px;
+        }
+
+        .legal-section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1B1E28;
+            margin-bottom: 8px;
+        }
+
+        .legal-section p {
+            font-size: 14px;
+            color: #707B81;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 32px 0;
+            border-top: 1px solid #E8E8E8;
+            margin-top: 40px;
+        }
+
+        .contact h2 {
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 20px;
+            font-weight: 700;
+            color: #1B1E28;
+            margin-bottom: 12px;
+        }
+
+        .contact a {
+            color: #4ECDC4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background-color: #E8E8E8;
+            margin: 32px 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 24px 0;
+            color: #707B81;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://wyhqyzjjswibzhrspwvx.supabase.co/storage/v1/object/public/storycrafters-media/branding/dreamnest-logo.png" alt="DreamNest Logo" class="logo">
+            <div class="app-name">DreamNest</div>
+            <div class="tagline">Calm minds, restful nights</div>
+            <h1>Privacy Policy</h1>
+            <div class="last-updated">Last Updated: January 2025</div>
+        </div>
+
+        <!-- Hero Card -->
+        <div class="hero-card">
+            <div class="shield-icon">&#128737;</div>
+            <h2>Privacy First</h2>
+            <p>We built DreamNest with maximum privacy.<br>No child data. No ads. No trackers.<br>Just bedtime magic.</p>
+        </div>
+
+        <!-- What We DON'T Collect -->
+        <div class="section">
+            <h2>What We DON'T Collect</h2>
+
+            <div class="privacy-card">
+                <div class="icon-box"><span>&#128118;</span></div>
+                <div>
+                    <h4>No Child Data</h4>
+                    <ul class="items">
+                        <li>No child names</li>
+                        <li>No child ages or birthdates</li>
+                        <li>No child photos or profiles</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="privacy-card">
+                <div class="icon-box"><span>&#128100;</span></div>
+                <div>
+                    <h4>No Parent Personal Data</h4>
+                    <ul class="items">
+                        <li>No parent names or demographics</li>
+                        <li>No location tracking</li>
+                        <li>No behavioral tracking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="privacy-card">
+                <div class="icon-box"><span>&#128683;</span></div>
+                <div>
+                    <h4>No Third-Party Trackers</h4>
+                    <ul class="items">
+                        <li>No analytics trackers</li>
+                        <li>No advertising IDs</li>
+                        <li>No social media pixels</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- What We DO Collect -->
+        <div class="section">
+            <h2>What We DO Collect</h2>
+            <p style="margin-bottom: 12px;">Only what's essential to make the app work</p>
+
+            <div class="privacy-card collect">
+                <div class="icon-box"><span>&#9993;</span></div>
+                <div>
+                    <h4>Your Email</h4>
+                    <ul class="items">
+                        <li>For login only. We don't send marketing emails.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="privacy-card collect">
+                <div class="icon-box"><span>&#128179;</span></div>
+                <div>
+                    <h4>Subscription Status</h4>
+                    <ul class="items">
+                        <li>To manage your trial and subscription.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="privacy-card collect">
+                <div class="icon-box"><span>&#128337;</span></div>
+                <div>
+                    <h4>Session Data (Anonymous)</h4>
+                    <ul class="items">
+                        <li>Which content you played, to improve recommendations. No personal info.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- How This Protects Your Family -->
+        <div class="section">
+            <h2>How This Protects Your Family</h2>
+
+            <div class="compliance-card">
+                <div class="check-icon">&#10003;</div>
+                <div>
+                    <h4>COPPA Compliant</h4>
+                    <p>We follow the Children's Online Privacy Protection Act. No data is collected from children.</p>
+                </div>
+            </div>
+
+            <div class="compliance-card">
+                <div class="check-icon">&#10003;</div>
+                <div>
+                    <h4>GDPR Compliant</h4>
+                    <p>We follow European data protection standards. Minimal data, clear purpose, easy deletion.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Your Rights -->
+        <div class="section">
+            <h2>Your Rights</h2>
+            <ul class="rights-list">
+                <li><span class="check-circle">&#10003;</span><span>Access your personal data</span></li>
+                <li><span class="check-circle">&#10003;</span><span>Correct inaccurate data</span></li>
+                <li><span class="check-circle">&#10003;</span><span>Request deletion of your account</span></li>
+                <li><span class="check-circle">&#10003;</span><span>Object to data processing</span></li>
+                <li><span class="check-circle">&#10003;</span><span>Export your data</span></li>
+            </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Full Legal Text -->
+        <div class="section">
+            <h2>Full Privacy Policy</h2>
+
+            <div class="legal-section">
+                <h3>1. Introduction</h3>
+                <p>Welcome to DreamNest ("we," "our," or "us"). We are committed to protecting the privacy of you and your family. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+                <p>Please read this Privacy Policy carefully. By using DreamNest, you agree to the collection and use of information in accordance with this policy.</p>
+            </div>
+
+            <div class="legal-section">
+                <h3>2. Information We Collect</h3>
+                <p>We collect minimal information necessary to provide our services:</p>
+                <p><strong>Account Information:</strong></p>
+                <ul>
+                    <li>Email address (for authentication purposes only)</li>
+                    <li>Password (encrypted, never stored in plain text)</li>
+                    <li>Subscription status (trial, active, cancelled, expired)</li>
+                </ul>
+                <p><strong>Usage Data (Anonymous):</strong></p>
+                <ul>
+                    <li>Session dates and times</li>
+                    <li>Content preferences (meditation, story, soundscape selections)</li>
+                    <li>Age band preference (stored locally on your device)</li>
+                    <li>Feedback ratings (optional)</li>
+                </ul>
+                <p><strong>We DO NOT collect:</strong></p>
+                <ul>
+                    <li>Child names, ages, birthdates, or photos</li>
+                    <li>Parent names or demographics</li>
+                    <li>Location data</li>
+                    <li>Device advertising identifiers</li>
+                    <li>Data from third-party tracking tools</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h3>3. How We Use Your Information</h3>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Provide, maintain, and improve our services</li>
+                    <li>Process your subscription and manage your account</li>
+                    <li>Customize content recommendations based on preferences</li>
+                    <li>Respond to your comments, questions, and support requests</li>
+                    <li>Monitor and analyze usage patterns to improve the app</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+                <p>We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
+            </div>
+
+            <div class="legal-section">
+                <h3>4. Children's Privacy (COPPA Compliance)</h3>
+                <p>DreamNest is designed for families with children but is controlled by adult users. We take children's privacy very seriously and comply fully with the Children's Online Privacy Protection Act (COPPA).</p>
+                <ul>
+                    <li>We do not knowingly collect personal information from children under 13</li>
+                    <li>We do not create child profiles or accounts</li>
+                    <li>We do not use persistent identifiers to track children</li>
+                    <li>Age band selection is stored locally on your device, not on our servers</li>
+                    <li>All content interaction data is anonymous and cannot identify any child</li>
+                </ul>
+                <p>Parents control the app experience through their adult account.</p>
+            </div>
+
+            <div class="legal-section">
+                <h3>5. Data Storage and Security</h3>
+                <p>Your data is stored securely using industry-standard encryption:</p>
+                <ul>
+                    <li>Account data is stored on Supabase (SOC 2 compliant servers)</li>
+                    <li>Passwords are encrypted using bcrypt hashing</li>
+                    <li>All data transmission uses SSL/TLS encryption</li>
+                    <li>Local preferences are stored on your device using secure storage</li>
+                </ul>
+                <p>We retain your data only as long as necessary to provide our services or as required by law. When you delete your account, all associated data is permanently removed within 30 days.</p>
+            </div>
+
+            <div class="legal-section">
+                <h3>6. Third-Party Services</h3>
+                <p>We use the following third-party services:</p>
+                <ul>
+                    <li>Supabase: Secure database and authentication (https://supabase.com/privacy)</li>
+                    <li>RevenueCat: Subscription management (https://www.revenuecat.com/privacy)</li>
+                    <li>Apple App Store / Google Play: App distribution and payments</li>
+                </ul>
+                <p>We do NOT use:</p>
+                <ul>
+                    <li>Analytics trackers (no Google Analytics, Firebase Analytics, etc.)</li>
+                    <li>Advertising networks</li>
+                    <li>Social media integrations</li>
+                    <li>Data brokers</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h3>7. Your Rights (GDPR Compliance)</h3>
+                <p>If you are a resident of the European Economic Area (EEA), you have the following data protection rights:</p>
+                <ul>
+                    <li>Right to Access: Request a copy of your personal data</li>
+                    <li>Right to Rectification: Request correction of inaccurate data</li>
+                    <li>Right to Erasure: Request deletion of your personal data</li>
+                    <li>Right to Restriction: Request limitation of data processing</li>
+                    <li>Right to Data Portability: Request transfer of your data</li>
+                    <li>Right to Object: Object to processing of your personal data</li>
+                    <li>Right to Withdraw Consent: Withdraw consent at any time</li>
+                </ul>
+                <p>To exercise these rights, contact us at privacy@dreamnestapp.com. We will respond within 30 days.</p>
+            </div>
+
+            <div class="legal-section">
+                <h3>8. California Privacy Rights (CCPA)</h3>
+                <p>California residents have additional rights under the California Consumer Privacy Act (CCPA):</p>
+                <ul>
+                    <li>Right to know what personal information is collected</li>
+                    <li>Right to know if personal information is sold or disclosed</li>
+                    <li>Right to opt-out of the sale of personal information</li>
+                    <li>Right to request deletion of personal information</li>
+                    <li>Right to non-discrimination for exercising privacy rights</li>
+                </ul>
+                <p>Note: We do not sell personal information to third parties.</p>
+            </div>
+
+            <div class="legal-section">
+                <h3>9. Data Retention</h3>
+                <p>We retain your information as follows:</p>
+                <ul>
+                    <li>Account data: Until you delete your account</li>
+                    <li>Usage data: 24 months (anonymized)</li>
+                    <li>Payment records: As required by law (typically 7 years)</li>
+                    <li>Local preferences: Until you uninstall the app</li>
+                </ul>
+                <p>You can request deletion of your account and all associated data at any time through the app settings or by contacting support@dreamnestapp.com.</p>
+            </div>
+
+            <div class="legal-section">
+                <h3>10. International Data Transfers</h3>
+                <p>Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place, including:</p>
+                <ul>
+                    <li>Standard contractual clauses approved by the European Commission</li>
+                    <li>Compliance with Privacy Shield frameworks where applicable</li>
+                    <li>Data processing agreements with all service providers</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h3>11. Changes to This Privacy Policy</h3>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+                <ul>
+                    <li>Posting the new Privacy Policy in the app</li>
+                    <li>Updating the "Last Updated" date</li>
+                    <li>Sending an email notification for material changes</li>
+                </ul>
+                <p>We encourage you to review this Privacy Policy periodically.</p>
+            </div>
+
+            <div class="legal-section">
+                <h3>12. Contact Us</h3>
+                <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
+                <p>Email: <a href="mailto:privacy@dreamnestapp.com">privacy@dreamnestapp.com</a></p>
+                <p>DreamNest<br>PatternKind Ltd.</p>
+                <p>For data protection inquiries, please include "Privacy Inquiry" in your subject line.</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Questions?</h2>
+            <p>Contact us at <a href="mailto:privacy@dreamnestapp.com">privacy@dreamnestapp.com</a></p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 DreamNest by PatternKind Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
