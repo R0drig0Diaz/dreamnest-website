@@ -6,7 +6,7 @@
     <title>Dreamlings - Calm minds, restful nights</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -16,7 +16,7 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(180deg, #FFFEE1 0%, #F0F4F8 100%);
+            background: #F0F4F8;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -26,117 +26,102 @@
             padding: 40px 24px;
         }
 
-        .logo {
-            width: 120px;
-            height: 120px;
-            margin-bottom: 24px;
+        .header {
+            margin-bottom: 40px;
         }
 
         .app-name {
-            font-family: 'Baloo Thambi 2', cursive;
-            font-size: 48px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 56px;
             font-weight: 800;
-            color: #1B1E28;
+            color: #2C3E50;
             margin-bottom: 8px;
+            letter-spacing: -1px;
         }
 
         .tagline {
             font-size: 18px;
-            color: #707B81;
-            margin-bottom: 40px;
+            color: #61646C;
+            font-weight: 500;
         }
 
         .description {
-            max-width: 500px;
-            font-size: 16px;
-            color: #1B1E28;
-            line-height: 1.6;
-            margin-bottom: 40px;
+            max-width: 480px;
+            font-size: 17px;
+            color: #2C3E50;
+            line-height: 1.7;
+            margin-bottom: 48px;
         }
 
         .features {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            margin-bottom: 40px;
+            gap: 16px;
+            margin-bottom: 48px;
         }
 
         .feature {
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 15px;
-            color: #1B1E28;
+            gap: 14px;
+            font-size: 16px;
+            color: #2C3E50;
         }
 
         .feature .check {
-            width: 24px;
-            height: 24px;
-            background-color: #4ECDC4;
-            border-radius: 12px;
+            width: 28px;
+            height: 28px;
+            background-color: #2C3E50;
+            border-radius: 14px;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 14px;
+            font-weight: bold;
         }
 
-        .cta-button {
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+        .coming-soon {
+            background: #2C3E50;
             color: white;
             padding: 16px 40px;
             border-radius: 30px;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
-            text-decoration: none;
-            margin-bottom: 24px;
+            margin-bottom: 48px;
             display: inline-block;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(78, 205, 196, 0.3);
-        }
-
-        .store-badges {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 40px;
-        }
-
-        .store-badge {
-            height: 44px;
-            opacity: 0.6;
         }
 
         .links {
             display: flex;
-            gap: 24px;
+            gap: 32px;
+            margin-bottom: 24px;
         }
 
         .links a {
-            color: #707B81;
+            color: #61646C;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s;
         }
 
         .links a:hover {
-            color: #4ECDC4;
+            color: #2C3E50;
         }
 
         .footer {
-            margin-top: 40px;
-            color: #707B81;
-            font-size: 13px;
+            margin-top: 24px;
+            color: #61646C;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <img src="https://wyhqyzjjswibzhrspwvx.supabase.co/storage/v1/object/public/storycrafters-media/branding/dreamlings-logo.png" alt="Dreamlings Logo" class="logo">
-
-    <h1 class="app-name">Dreamlings</h1>
-    <p class="tagline">Calm minds, restful nights</p>
+    <div class="header">
+        <h1 class="app-name">Dreamlings</h1>
+        <p class="tagline">Calm minds, restful nights</p>
+    </div>
 
     <p class="description">
         Evidence-based bedtime stories, meditations, and soundscapes designed to help children wind down and drift off to sleep peacefully.
@@ -157,7 +142,7 @@
         </div>
     </div>
 
-    <p style="color: #707B81; margin-bottom: 40px;">Coming soon to the App Store</p>
+    <div class="coming-soon">Coming soon to the App Store</div>
 
     <div class="links">
         <a href="/privacy">Privacy Policy</a>
